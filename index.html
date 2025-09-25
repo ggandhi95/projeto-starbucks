@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starbucks DevClub - Atendimento IA com Giovana</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="logo.svg" alt="Starbucks" class="logo">
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#chat">Giovana (IA)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Atendimento IA — Giovana</h1>
+        <p>Converse com a nossa assistente virtual para tirar dúvidas sobre produtos, pedidos e promoções.</p>
+        <a class="btn" href="#chat">Abrir Giovana</a>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Sobre</h2>
+      <p>Demo construída com ferramenta de protótipo. A Giovana é um agente conversacional integrado via WebSocket/REST.</p>
+    </section>
+
+    <section id="chat" class="chat-section container">
+      <aside class="chat-panel">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off">
+          <button type="submit">Enviar</button>
+        </form>
+      </aside>
+      <aside class="info-panel">
+        <h3>Giovana</h3>
+        <p>Assistente virtual — responda perguntas rápidas sobre cardápio e pedidos.</p>
+        <div class="status"><strong>Status:</strong> <span id="bot-status">offline</span></div>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Starbucks DevClub — Demo</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
